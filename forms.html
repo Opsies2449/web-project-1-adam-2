@@ -12,22 +12,23 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="survey.html">Survey</a></li>
+          <li><a href="forms.html">Survey</a></li>
         </ul>
       </nav>
     </header>
     <main>
       <section>
         <h2>The apple survey</h2>
-        <p>Please fill out the survey below:</p>
+        <p>Please fill out the survey form below:</p>
         <p>
           This is a school website,
           <mark>please DO NOT put in any private information!</mark>
         </p>
+        <!--This form is to get information about the users thoughts about apples by letting them fill out the survey-->
         <form method="get">
-          <!-- This form collects information from the user and
-            when the submit button is pressed the data is sent because it uses the
-            using the GET method -->
+          <!-- This form collects information from the user when it is
+          submitted and the data is sent because it uses the
+          using the GET method -->
           <fieldset>
             <!-- This fieldset groups the personal information together
             so it is easier to understand and read -->
@@ -36,7 +37,7 @@
             <label for="fname">First name</label>
             <!-- This label tells the user what information to type in which is their first name-->
             <input type="text" id="fname" name="fname" />
-            <!-- This text box lets the user type in their first name-->
+            <!-- This text box lets the user type in their first name -->
             <br /><br />
             <!-- These line breaks add space so the form does not look crowded. -->
             <label for="lname">Last name</label>
@@ -48,26 +49,25 @@
             <p>Do you like apples?</p>
             <!-- This text asks the question but does not get input-->
             <input type="radio" id="yes" name="like_apples" value="yes" />
-            <!-- This radio button lets the user choose yes
-            but only one radio button can be picked by the user-->
+            <!-- This radio button lets the user choose yes -->
             <label for="yes">Yes</label><br />
             <input type="radio" id="no" name="like_apples" value="no" />
             <label for="no">No</label><br /><br />
             <input type="checkbox" id="daily" name="everyday" />
-            <!-- This checkbox can be checked by the user and can also be unchecked -->
+            <!-- The checkbox type can be checked by the user -->
             <label for="everyday">I eat apples every day</label><br /><br />
             <input type="color" id="applecolor" name="applecolor" />
-            <!-- This input shows a color box that lets the user choose a color -->
+            <!-- This input shows a color box -->
             <label for="applecolor">Choose your favorite apple color</label
             ><br /><br />
           </fieldset>
           <input type="submit" value="Submit" />
           <!-- This button sends all the answers in the form-->
           <input type="reset" value="Reset" />
-          <!-- This button delets all the options the user picked-->
+          <!-- This button deletes all the options the user picked-->
         </form>
       </section>
     </main>
-    <footer>Apple awesomeness 2026 no rights reserved</footer>
+    <footer>Apple awesomeness 2026 all rights reserved</footer>
   </body>
 </html>
